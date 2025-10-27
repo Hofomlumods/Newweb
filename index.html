@@ -92,24 +92,6 @@
     <p class="terms">By continuing you agree to our <a href="terms of service.html">terms of service</a></p>
     <p>Already have an account? For further support, you may visit the <a href="contactus.html">Help Center</a> or <a href="contactus.html">contact</a> our customer service team.</p>
   </div>
-  <script>
-    function validateForm() {
-      var contact = document.getElementById("contact").value;
-      var error = document.getElementById("error");
-      var emailRegex = /^[a-zA-Z0-9._%+-]+@+[a-zA-Z0-9.-]+\.com$/;
-      var phoneRegex = /^(234|0)?[0-9]{10}$/; // for 11 or 13 digits
-      if (contact == "") {
-        error.innerHTML = "Please enter either email or phone number.";
-        return false;
-      } else if (emailRegex.test(contact)) {
-        return true;
-      } else if (phoneRegex.test(contact)) {
-        return true;
-      } else {
-        error.innerHTML = "Please enter a valid email or phone number.";
-        return false;
-      }
-    }
-  </script>
+
 </body>
 </html>
